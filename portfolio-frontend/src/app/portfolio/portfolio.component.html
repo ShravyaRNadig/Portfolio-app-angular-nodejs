@@ -1,0 +1,32 @@
+<h2>My Portfolio</h2>
+
+<form (ngSubmit)="addPortfolioItem()" #portfolioForm="ngForm" class="portfolio-form">
+  <div>
+    <label for="title">Title:</label>
+    <input type="text" id="title" [(ngModel)]="portfolioItem.title" name="title" required />
+  </div>
+  <div>
+    <label for="description">Description:</label>
+    <textarea id="description" [(ngModel)]="portfolioItem.description" name="description" required></textarea>
+  </div>
+  <div>
+    <label for="imageUrl">Image URL:</label>
+    <input type="text" id="imageUrl" [(ngModel)]="portfolioItem.imageUrl" name="imageUrl" required />
+  </div>
+  <div>
+    <label for="link">Project Link:</label>
+    <input type="text" id="link" [(ngModel)]="portfolioItem.link" name="link" required />
+  </div>
+  <button type="submit">Add Portfolio Item</button>
+</form>
+
+<ul class="portfolio-items">
+  <li *ngFor="let item of portfolioItems" class="portfolio-item">
+    <h3>{{ item.title }}</h3>
+    <p>{{ item.description }}</p>
+    <img [src]="item.imageUrl" alt="{{ item.title }}">
+    <a [href]="item.link" target="_blank">View Project</a>
+    <button (click)="editPortfolioItem(item.id)">Edit</button>
+    <button (click)="deletePortfolioItem(item.id)">Delete</button>
+  </li>
+</ul>

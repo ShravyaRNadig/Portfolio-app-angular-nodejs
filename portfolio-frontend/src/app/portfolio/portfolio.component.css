@@ -1,0 +1,141 @@
+/* General styling for the portfolio component */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4; /* Light gray background for contrast */
+  color: #333;
+}
+
+h2 {
+  text-align: center;
+  margin: 30px 0;
+  color: #333;
+}
+
+/* Form styling */
+.portfolio-form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #ffffff; /* White background for form */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.portfolio-form div {
+  margin-bottom: 15px;
+}
+
+.portfolio-form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  font-size: 14px;
+  color: #555;
+}
+
+.portfolio-form input[type="text"],
+.portfolio-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  transition: border-color 0.3s;
+}
+
+.portfolio-form input[type="text"]:focus,
+.portfolio-form textarea:focus {
+  border-color: #4CAF50; /* Green border on focus */
+  outline: none; /* Remove default outline */
+}
+
+.portfolio-form textarea {
+  height: 100px;
+  resize: vertical; /* Allows users to resize the textarea vertically */
+}
+
+.portfolio-form button {
+  background-color: #007bff; /* Blue button */
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+  width: 100%; /* Full width for buttons */
+  margin-top: 10px; /* Space above buttons */
+}
+
+.portfolio-form button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Portfolio items styling */
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 20px auto; /* Center align */
+  max-width: 600px; /* Same width as the form */
+}
+
+ul li {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  margin: 10px 0;
+  background-color: #ffffff; /* White background for items */
+  transition: box-shadow 0.3s ease;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+ul li:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow on hover */
+}
+
+ul li h3 {
+  margin: 0 0 10px;
+  font-family: 'Arial', sans-serif;
+  color: #333;
+}
+
+ul li p {
+  margin: 0 0 10px;
+  color: #666;
+}
+
+ul li img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+ul li a {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 5px 10px;
+  color: #fff;
+  background-color: #007bff; /* Blue link button */
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+ul li a:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+ul li button {
+  margin-right: 5px;
+  background-color: #dc3545; /* Red color for delete */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  padding: 5px 10px;
+}
+
+ul li button:hover {
+  background-color: #c82333; /* Darker red on hover */
+}
